@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GopherMagSensing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scanDeviceLabel">Scan for Device</string>
+    <string name="startTestLabel">Start Test</string>
+    <string name="emailResultLabel">E-mail Results</string>
+    <string name="settingsLabel">Settings</string>
+    <string name="stringDone">Done</string>
+    
+    <string name="scanscreen_name">Scan Devices</string>
+    <string name="emailscreen_name">E-mail Report</string>
+    <string name="settingsscreen_name">Settings</string>
+    <string name="userscreen_name">User Information</string>
+    <string name="testscreen_name">Experiment Screen</string>
+    
+    <string name="title_activity_file_picker">Filepicker</string>
+    <string name="title_activity_file_picker_auth">FilepickerAuthActivity</string>
+
+</resources>

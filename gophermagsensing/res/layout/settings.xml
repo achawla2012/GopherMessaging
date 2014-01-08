@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/buttonCancel"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginRight="20dp"
+        android:onClick="cancelSettings"
+        android:text="Cancel" />
+
+    <EditText
+        android:id="@+id/editTextWheatstoneAmp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelWheatstoneAmp"
+        android:layout_toLeftOf="@+id/buttonCancel"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/labelWheatstoneFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelWheatstoneAmp"
+        android:layout_below="@+id/labelWheatstoneAmp"
+        android:layout_marginTop="27dp"
+        android:text="Wheatstone Frequency" />
+
+    <EditText
+        android:id="@+id/editTextWheatstoneFreq"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelWheatstoneFreq"
+        android:layout_alignLeft="@+id/editTextWheatstoneAmp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelCoilAmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelWheatstoneFreq"
+        android:layout_below="@+id/labelWheatstoneFreq"
+        android:layout_marginTop="28dp"
+        android:text="Coil Amplitude" />
+
+    <EditText
+        android:id="@+id/editCoilAmp"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelCoilAmp"
+        android:layout_alignLeft="@+id/editTextWheatstoneFreq"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelCoilFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelCoilAmp"
+        android:layout_below="@+id/labelCoilAmp"
+        android:layout_marginTop="26dp"
+        android:text="Coil Frequency" />
+
+    <EditText
+        android:id="@+id/editTextCoilFreq"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelCoilFreq"
+        android:layout_alignLeft="@+id/editCoilAmp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelCoilDCOffset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelCoilFreq"
+        android:layout_below="@+id/labelCoilFreq"
+        android:layout_marginTop="26dp"
+        android:text="Coil DC Offset" />
+
+    <EditText
+        android:id="@+id/editCoilDCOffset"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelCoilDCOffset"
+        android:layout_alignLeft="@+id/editTextCoilFreq"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelMeasurementPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelCoilDCOffset"
+        android:layout_below="@+id/labelCoilDCOffset"
+        android:layout_marginTop="22dp"
+        android:text="Measurement Period" />
+
+    <EditText
+        android:id="@+id/editTextMeasurementPeriod"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelMeasurementPeriod"
+        android:layout_alignLeft="@+id/editCoilDCOffset"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelDigitalGain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelMeasurementPeriod"
+        android:layout_below="@+id/labelMeasurementPeriod"
+        android:layout_marginTop="22dp"
+        android:text="Digital Gain" />
+
+    <EditText
+        android:id="@+id/editDigitalGain"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelDigitalGain"
+        android:layout_alignLeft="@+id/editTextMeasurementPeriod"
+        android:ems="10"
+        android:inputType="number" />
+
+	<TextView
+        android:id="@+id/labelAnalogGain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelDigitalGain"
+        android:layout_below="@+id/labelDigitalGain"
+        android:layout_marginTop="22dp"
+        android:text="Analog Gain" />
+
+    <EditText
+        android:id="@+id/editAnalogGain"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/labelAnalogGain"
+        android:layout_alignLeft="@+id/editDigitalGain"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelDigitalGain"
+        android:layout_alignTop="@+id/buttonCancel"
+        android:onClick="clearSettings"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/buttonDefault"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDone"
+        android:layout_alignBottom="@+id/buttonDone"
+        android:layout_toRightOf="@+id/labelDigitalGain"
+        android:onClick="setDefaultSettings"
+        android:text="Default" />
+
+    <TextView
+        android:id="@+id/labelWheatstoneFreqUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextWheatstoneFreq"
+        android:layout_alignBottom="@+id/editTextWheatstoneFreq"
+        android:layout_alignLeft="@+id/labelWheatstoneAmpUnit"
+        android:layout_alignRight="@+id/labelWheatstoneAmpUnit"
+        android:text="Hz" />
+
+    <TextView
+        android:id="@+id/labelCoilAmpliUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editCoilAmp"
+        android:layout_alignBottom="@+id/editCoilAmp"
+        android:layout_alignLeft="@+id/labelWheatstoneFreqUnit"
+        android:text="mV" />
+
+    <TextView
+        android:id="@+id/labelCoilFreqUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCoilFreq"
+        android:layout_alignBottom="@+id/editTextCoilFreq"
+        android:layout_alignLeft="@+id/labelCoilAmpliUnit"
+        android:layout_alignRight="@+id/labelCoilAmpliUnit"
+        android:text="Hz" />
+
+    <TextView
+        android:id="@+id/labelCoilDCOffsetUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editCoilDCOffset"
+        android:layout_alignBottom="@+id/editCoilDCOffset"
+        android:layout_alignLeft="@+id/labelCoilFreqUnit"
+        android:layout_alignRight="@+id/labelCoilFreqUnit"
+        android:text="V" />
+
+    <TextView
+        android:id="@+id/labelMeasurementPeriodUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextMeasurementPeriod"
+        android:layout_alignBottom="@+id/editTextMeasurementPeriod"
+        android:layout_alignLeft="@+id/labelCoilDCOffsetUnit"
+        android:layout_alignRight="@+id/buttonCancel"
+        android:text="Sec" />
+
+    <TextView
+        android:id="@+id/labelWheatstoneAmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/editTextWheatstoneAmp"
+        android:text="Wheatstone Amplitdude" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCancel"
+        android:layout_alignBottom="@+id/buttonCancel"
+        android:layout_toRightOf="@+id/labelWheatstoneFreq"
+        android:onClick="doneSettings"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/labelWheatstoneAmpUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextWheatstoneAmp"
+        android:layout_alignBottom="@+id/editTextWheatstoneAmp"
+        android:layout_alignLeft="@+id/buttonCancel"
+        android:layout_marginLeft="18dp"
+        android:text="mV" />
+
+</RelativeLayout>
